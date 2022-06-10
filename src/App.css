@@ -1,38 +1,129 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+.App{
+    flex: auto;
+}
+.Home {
+    text-align: center;
+    padding: 10rem;
+    columns: 2 auto ;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Gulnaz {
+    text-align: center;
+    columns: 2 auto ;
 }
+
+.About {
+    text-align: center;
+}
+
+
+
+.AddButton {
+    padding: 5px 15px;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #222f3e;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 3px #999;
+  }
+  
+  .Home input:hover {background-color: #445970}
+  
+  .Home input:active {
+    background-color: #2b3a4d;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+
+.tool-bar {
+    background-color: #222f3e;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem
+}
+
+.sidebar {
+    position: absolute;
+    background-color: #222f3e;
+    color: #fff;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 150px;
+    transform:translateX(-100%);
+    transition: all 0.4s;
+}
+
+.sidebar li{
+    list-style: none;
+    padding: 1rem 2rem;
+    border-bottom: solid rgba(255, 255, 255,0.1)  1px;
+
+
+}
+
+.sidebar li:hover{
+background-color:#415c7a ;
+color:black;
+
+}
+.backdrop{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh  ;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+}
+
+.sidebar--open{
+transform:translate(0%)
+}
+
+.backdrop--close{
+
+display:block;
+
+
+}
+
+
+
+
+
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
